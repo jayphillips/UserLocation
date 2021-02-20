@@ -9,12 +9,12 @@ import UIKit
 
 class AddressLabelView: UILabel {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func awakeFromNib() {
+        self.layer.cornerRadius = 10
+        self.layer.backgroundColor = UIColor.white.cgColor
+        self.layer.shadowColor = UIColor.black.cgColor
+        
+        
     }
-    */
 
 }
